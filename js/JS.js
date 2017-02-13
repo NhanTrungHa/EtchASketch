@@ -25,4 +25,9 @@ $(document).ready(function(){
     $("#gridButton").click(function(){
         newGrid();                     
      });   
+    $("div").hover(function() {
+        $(this).css('background-color','black');
+    }, function() {
+        $(this).css('background-color','black');
+    }); 
 });
