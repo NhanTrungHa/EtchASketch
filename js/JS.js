@@ -5,12 +5,12 @@ function createGrid(x) {
         $("#container").append(unit);
         }
     }
-    $(".units").width(900/x);
-    $(".units").height(900/x);
+    $(".units").width(892/x);
+    $(".units").height(892/x);
 }
 
 function gridClear() {
-    $(".units").remove;
+    $(".units").remove();
 }
 
 function newGrid() {
@@ -21,5 +21,8 @@ function newGrid() {
 
 $(document).ready(function(){
    createGrid(16); 
-           
+        
+    $("#gridButton").click(function(){
+        newGrid();                     
+     });   
 });
