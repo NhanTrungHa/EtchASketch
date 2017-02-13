@@ -1,0 +1,27 @@
+#container {
+    background-color: #e0e0e0;
+    height: 900px;
+    width: 900px;
+    margin: auto;
+    border:3px solid black;
+    position:relative;
+    margin-top: 100px;
+    z-index: 20;
+}
+.units {
+    display:inline-block;
+    border: 1px solid black;
+    background-color: grey;
+}
+#gridButton{
+    z-index: 30;
+    position:relative;
+    margin-left:910px;
+    bottom: 850px;
+    height: 20px;
+    width: 100px;
+    background-color:#e8e8e8;    
+    border: none;
+    font-family: arial,sans-serif;
+    color:black;
+}
