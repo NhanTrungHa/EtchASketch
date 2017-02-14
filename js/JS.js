@@ -17,17 +17,20 @@ function newGrid() {
     var z = prompt("How many rows and columns?");
     gridClear();
     createGrid(z);
+    hoverColor();
 }
-
+function hoverColor() {
+    $("div").hover(function() {
+        $(this).css('background-color','black');
+    }, function() {
+        $(this).css('background-color','black');
+    }); 
+}
 $(document).ready(function(){
    createGrid(16); 
         
     $("#gridButton").click(function(){
         newGrid();                     
      });   
-    $("div").hover(function() {
-        $(this).css('background-color','black');
-    }, function() {
-        $(this).css('background-color','black');
-    }); 
+    hoverColor();
 });
