@@ -2,7 +2,7 @@
     background-color: #e0e0e0;
     height: 892px;
     width: 892px;
-    margin: auto;
+    margin-left: 30%;
     border:3px solid black;
     position:relative;
     margin-top: 100px;
@@ -11,15 +11,26 @@
 }
 .units {
     display:inline-block;
-    background-color: grey;
     float: left;
     z-index: 25;
     margin:auto;
+    background: lightgray;
 }
 #gridButton{
     z-index: 30;
     position:relative;
-    margin-left:920px;
+    margin-left:30%;
+    bottom: 950px;
+    height: 20px;
+    width: 100px;
+    background-color:#e8e8e8;    
+    border: none;
+    font-family: arial,sans-serif;
+    color:black;
+}
+#gridClearButton {
+    position:relative;
+    margin-left:5%;
     bottom: 950px;
     height: 20px;
     width: 100px;

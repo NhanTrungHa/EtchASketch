@@ -1,12 +1,12 @@
 function createGrid(x) {
-    for(var rows = 0; rows < x; rows++) {
-        for(var columns = 0; columns < x; columns++) {
-        var unit = $("<div class = units></div>")
-        $("#container").append(unit);
+    for (var rows = 0; rows < x; rows++) {
+        for (var columns = 0; columns < x; columns++) {
+            var unit = $("<div class = units></div>")
+            $("#container").append(unit);
         }
     }
-    $(".units").width(892/x);
-    $(".units").height(892/x);
+    $(".units").width(892 / x);
+    $(".units").height(892 / x);
 }
 
 function gridClear() {
@@ -19,18 +19,24 @@ function newGrid() {
     createGrid(z);
     hoverColor();
 }
+
 function hoverColor() {
-    $("div").hover(function() {
-        $(this).css('background-color','black');
-    }, function() {
-        $(this).css('background-color','black');
-    }); 
+    $("div").hover(function () {
+        $(this).css('background-color', 'black');
+    }, function () {
+        $(this).css('background-color', 'black');
+    });
 }
-$(document).ready(function(){
-   createGrid(16); 
-        
-    $("#gridButton").click(function(){
-        newGrid();                     
-     });   
+
+    
+$(document).ready(function () {
+    createGrid(16);
+    $("#gridButton").click(function () {
+        newGrid();
+    });
     hoverColor();
+    $("#gridClearButton").click(function(){
+        $(".units").css('background', 'lightgray');
+    });
 });
+//box-shadow: 2px 2px 2px 2px black;
