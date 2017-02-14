@@ -19,7 +19,7 @@
 #gridButton{
     z-index: 30;
     position:relative;
-    margin-left:30%;
+    margin-left:32%;
     bottom: 950px;
     height: 20px;
     width: 100px;
@@ -30,7 +30,29 @@
 }
 #gridClearButton {
     position:relative;
-    margin-left:5%;
+    margin-left:7%;
+    bottom: 950px;
+    height: 20px;
+    width: 100px;
+    background-color:#e8e8e8;    
+    border: none;
+    font-family: arial,sans-serif;
+    color:black;
+}
+#RGBButton {
+    position:relative;
+    margin-left:7%;
+    bottom: 950px;
+    height: 20px;
+    width: 100px;
+    background-color:#e8e8e8;    
+    border: none;
+    font-family: arial,sans-serif;
+    color:black;
+}
+#gradientButton {
+    position:relative;
+    margin-left:7%;
     bottom: 950px;
     height: 20px;
     width: 100px;
