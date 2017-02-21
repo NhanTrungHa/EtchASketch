@@ -56,10 +56,6 @@ $(document).ready(function () {
     //changes blocks to black when hovered over
     hoverColor();
     
-    ('RGBButton').click(function(){
-        hoverRGB();
-    });
-    
     $("#gridClearButton").click(function(){
         $(".units").css('background', 'lightgray');
     });
