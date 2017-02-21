@@ -29,13 +29,41 @@ function hoverColor() {
     });
 }
 
+function randomColorGen() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+function hoverRGB() {
+    randomColorGen();
+    $("div").hover(function () {
+        $(this).css('background-color', 'color');
+    }, function () {
+        $(this).css('background-color', 'color');
+    });
+}
+
 $(document).ready(function () {
+    //creates grid
     createGrid(16);
     $("#gridButton").click(function () {
         newGrid();
     });
+    //changes blocks to black when hovered over
     hoverColor();
+    
+    ('RGBButton').click(function(){
+        hoverRGB();
+    });
+    
     $("#gridClearButton").click(function(){
         $(".units").css('background', 'lightgray');
     });
+    
+    
+    
 });
